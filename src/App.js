@@ -7,6 +7,7 @@ import {
   List,
   Image
 } from "semantic-ui-react";
+import MainContainer from './MainContainer'
 
 function App() {
   return (
@@ -15,12 +16,14 @@ function App() {
         <Menu.Item header>Bookliker</Menu.Item>
       </Menu>
       <main>
-        <Menu vertical inverted>
+        <MainContainer />
+        {/* <Menu vertical inverted>
           <Menu.Item as={"a"} onClick={e => console.log("book clicked!")}>
             Book title
           </Menu.Item>
-        </Menu>
-        <Container text>
+        </Menu> */}
+        
+        {/* <Container text>
           <Header>Book title</Header>
           <Image
             src="https://react.semantic-ui.com/images/wireframe/image.png"
@@ -41,8 +44,9 @@ function App() {
           <Header>Liked by</Header>
           <List>
             <List.Item icon="user" content="User name" />
+            <List.Item icon="user" content="User name" />
           </List>
-        </Container>
+        </Container> */}
       </main>
     </div>
   );
